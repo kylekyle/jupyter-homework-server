@@ -1,0 +1,23 @@
+html 
+  head
+    title Homework Server
+
+    link href='style.css' rel='stylesheet'
+    link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'
+
+  body
+    div#container
+      div#content
+        nav.navbar.navbar-default
+          div.container-fluid
+            div.navbar-header
+              a.navbar-brand  href='/'
+                | Homework Server
+              ul.nav.navbar-nav
+                li
+                  a href='/help' Help
+
+        div#main.col-lg-offset-2.col-lg-8
+          ==yield
+
+      div#footer

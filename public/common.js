@@ -1,0 +1,1 @@
+console.log('jupyter-homework: common server hook loaded');

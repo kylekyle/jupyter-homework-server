@@ -1,0 +1,1 @@
+console.log('jupyter-homework: notebook server hook loaded');
