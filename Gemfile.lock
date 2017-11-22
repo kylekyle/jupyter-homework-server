@@ -3,12 +3,19 @@ GEM
   specs:
     dotenv (2.2.1)
     ffi (1.9.18)
+    listen (3.1.5)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
     rack (2.0.3)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    rerun (0.11.0)
+      listen (~> 3.0)
     roda (3.1.0)
       rack
+    ruby_dep (1.5.0)
     sass (3.5.3)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -25,12 +32,10 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
+  rerun
   roda
   sass
   slim
-
-RUBY VERSION
-   ruby 2.4.2p198
 
 BUNDLED WITH
    1.16.0

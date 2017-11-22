@@ -1,8 +1,7 @@
 require "roda"
 
 class HomeworkServer < Roda
-  plugin :type_routing
-  plugin :static, ['/']
+  plugin :public
   plugin :status_handler
   plugin :render, engine: 'slim'
 
@@ -12,6 +11,8 @@ class HomeworkServer < Roda
   end
 
   route do |r|
+    r.public
+
     r.root do 
       view :index
     end
@@ -20,8 +21,8 @@ class HomeworkServer < Roda
       render :style, engine: 'scss'
     end
 
-    r.get '/' do
-      r.public
+    r.post do
+      "Thanks!"
     end
   end
 end
